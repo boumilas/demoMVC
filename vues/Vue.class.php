@@ -24,7 +24,7 @@ class Vue {
 		<!DOCTYPE html>
             <html lang="fr">
                 <head>
-                    <title>Mon simple MVC - <?php echo $titre ?></title>
+                    <title>Mon simple MVC MODIFIÉ - <?php echo $titre ?></title>
                     <meta charset="utf-8">
                     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
                     <meta name="keywords" content="<?php echo implode(',',$motcles)?>">
@@ -66,11 +66,6 @@ class Vue {
     {
         ?>
         
-            <article>
-                <h1>Bienvenue sur Simple MVC Structure </h1>
-                <p>Simple MVC Structure  n'est pas un framework, mais seulement une structure de base qui permet de monter un MVC rapidement en php. 
-                    Il suffit de forker le <a href="#">dépot Github</a> et de dupliquer les classes vues et modele afin d'en disposer à votre convenance.</p>
-            </article>
 
         
     <?php
@@ -85,9 +80,7 @@ class Vue {
                 if(!empty($elu['Nom']))
                 {
             ?>
-                <article class="elus">
-                    <h2><a href="index.php?requete=maires&id=<?php echo $elu['id']?>"><?php echo $elu['Nom'] . ", " . $elu['Prénom'] ?></a></h2>
-                </article>
+ 
             <?php
                 }
             }
